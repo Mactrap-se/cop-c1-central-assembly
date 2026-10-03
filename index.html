@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COP - Central Assembly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <button class="lang-btn" onclick="toggleLang()" id="langBtn">TWI</button>
+        <img src="images/logo.jpg" class="logo" alt="COP Logo">
+        <h1 style="margin:0; font-size:20px">THE CHURCH OF PENTECOST</h1>
+        <p style="margin:4px; font-weight:bold">Central Assembly - Tema</p>
+        <p style="font-size:12px">📅 <span id="todayDate"></span></p>
+    </div>
+
+    <div class="card service-card">
+        <h3 id="txtService">📖 Sunday Service Order</h3>
+        <p><b>7:00 AM</b> - <span class="t1">Sunday School</span></p>
+        <p><b>8:30 AM</b> - <span class="t2">Main Service</span></p>
+        <p><b id="txtPreacher">Preacher:</b> Pastor Dzefe</p>
+        <p><b id="txtTheme">Theme:</b> Walking in Holiness - 1 Pet 1:15</p>
+    </div>
+
+    <div id="announcementsList"></div>
+
+    <div class="card">
+        <h3 id="txtPrayerTitle">🙏 Prayer Request / Mpaebɔ</h3>
+        <input id="pName" placeholder="Your Name / Wo Din">
+        <textarea id="pRequest" placeholder="Prayer request / Wo mpaebɔ..."></textarea>
+        <button class="btn btn-blue" onclick="sendPrayer()" id="txtPrayerBtn">Submit / Fa Kɔ</button>
+    </div>
+
+    <div style="text-align:center; padding:10px">
+        <button onclick="showAdmin()" class="admin-login-btn" id="txtAdmin">Pastor Login</button>
+    </div>
+
+    <div class="admin-box" id="adminBox">
+        <h3>Pastor Dzefe Panel</h3>
+        <input id="adminPass" type="password" placeholder="Password">
+        <input id="aTitle" placeholder="Title EN / Twi">
+        <textarea id="aDesc" placeholder="Details..."></textarea>
+        <input id="aDate" type="date">
+        <select id="backupOpt">
+            <option value="local">Phone Only</option>
+            <option value="sheet">+ Google Sheet Backup</option>
+        </select>
+        <button class="btn btn-blue" onclick="addAnnouncement()">Post Announcement</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
