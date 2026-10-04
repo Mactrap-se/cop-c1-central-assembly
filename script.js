@@ -7,7 +7,7 @@ const dict = {
         theme: "Theme:",
         prayerTitle: "🙏 Prayer Request",
         prayerBtn: "Submit / Fa Kɔ",
-        admin: "Pastor Login",
+        admin: "Admin Login",
         sunday: "Sunday School / Kwasiada Sukuu",
         main: "Main Service / Som Kɛseɛ",
         langBtn: "TWI"
